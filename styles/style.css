@@ -2,6 +2,7 @@ body {
     margin: 0; 
     padding: 0; 
     font-family: "Barlow"; 
+    background-color: #08080C;
     } 
 
     header { 
@@ -10,32 +11,35 @@ body {
     opacity: 0.95; 
     } 
     
-  nav { 
+    nav { 
     display: flex; 
     align-items: center; 
     justify-content: space-around; 
     height: 100%; 
-  } 
-   
-  nav ul { 
+    } 
+
+    nav ul { 
     list-style: none; 
     margin: 0; 
     padding: 0; 
-  } 
-   
-  a { 
+    } 
+
+    a { 
     color: white 
-  } 
-   
-  .left-links li { 
+    } 
+
+    .left-links li { 
     margin-right: 100px; 
     display: inline; 
-  } 
-   
-  .left-links li:last-child { 
+    } 
+
+    .left-links li:last-child { 
     margin-right: 0; 
-  } 
-   
+    } 
+    .right-links{
+    padding: 20px;
+    margin-left: 30px;
+    }
     .left-links a { 
     font-size: 14px; 
     font-weight: 400; 
@@ -43,6 +47,9 @@ body {
     color: #FFFFFF; 
     text-decoration: none; 
     } 
+    .left-links a:hover { 
+    color:#1EE1B3
+    }
 
     .right-links a { 
     font-size: 14px; 
@@ -51,19 +58,19 @@ body {
     text-decoration: none; 
     } 
 
-  .right-links li { 
+    .right-links li { 
     display: inline-block; 
-  } 
-   
-  .login { 
+    } 
+
+    .login { 
     margin-right: 30px; 
-  } 
-   
-  .signup { 
+    } 
+
+    .signup { 
     color: #08080C; 
-  } 
-   
-  .signup-border { 
+    } 
+
+    .signup-border { 
     width: 103px; 
     height: 42px; 
     border-radius: 3px; 
@@ -72,4 +79,65 @@ body {
     display: flex; 
     align-items: center; 
     justify-content: center; 
+    }
+    .main_wrap{
+    width: 1539px;
+    height: 769px;
+    top: 92px;
+    left: 131px;
+    gap: 0px;
+    opacity: 0px;
+    margin-top: 30px;
+    position: relative;
+    }
+    .every{
+        position: absolute;
+        float: right;
+        left: 0;
+        color: #FFFFFF;
+    }
+    article{
+
+    }
+    @media (max-width: 450px) {
+        .class {
+            color: red;
+        }
+    
+        .class-2 {
+            margin-left: 0;
+        }
+    }
+    /* main */ 
+/*******/ 
+ 
+.main_wrap { 
+    position: relative; 
+    top: 92px; 
+    left: 131px; 
+  } 
+   
+  .inner_container { 
+    width: 640px; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+  } 
+   
+  .square { 
+    width: 468.08px; 
+    height: 468.08px; 
+    position: absolute; 
+    top: 416.77px; 
+    left: 145px; 
+    border: 1px solid #1EE1B3; 
+    transform: rotate(22.32deg); 
+  } 
+   
+  .image { 
+    width: 640px; 
+    height: 769px; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
   }
